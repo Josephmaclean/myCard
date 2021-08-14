@@ -103,6 +103,25 @@ class ReviewScannedCardDetailsViewController: UIViewController {
     @IBAction func createCardPressed(_ sender: Any) {
         if viewModel.labelledContact.name.fullName == nil {
             self.alert(title: "Please enter a name", message: "Cannot create a card without a name")
+            return
+        }
+        if !viewModel.unlabelledScannedDetails.value.isEmpty {
+            let alertController = UIAlertController(
+                title: "Do you want to delete all unlabelled details?",
+                message: "There are some unlabelled details left and this action will permanently delete all unlabelled data. Are you sure you want to continue?",
+                preferredStyle: .alert
+            )
+            let okAction = UIAlertAction(
+                title: NSLocalizedString("Yes", comment: "Default action"),
+                style: .destructive
+            ) { [self]_ in
+                viewModel.createContactCard()
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+            alertController.addAction(okAction)
+            alertController.addAction(cancelAction)
+
+            present(alertController, animated: true, completion: nil)
         } else {
             viewModel.createContactCard()
         }
