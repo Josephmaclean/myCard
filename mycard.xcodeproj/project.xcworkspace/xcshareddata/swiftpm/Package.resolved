@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NotificationToast",
+        "repositoryURL": "https://github.com/PhilippeWeidmann/NotificationToast",
+        "state": {
+          "branch": null,
+          "revision": "cd3c52e16b0348909e2d18a8c820652237e403d4",
+          "version": "1.0.8"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

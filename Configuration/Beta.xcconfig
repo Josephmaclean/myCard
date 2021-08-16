@@ -1,0 +1,13 @@
+//
+//  Beta.xcconfig
+//  mycard
+//
+//  Created by Joseph Maclean Arhin on 8/15/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-mycard/Pods-mycard.debug.xcconfig"
+BASE_URL = MyCardBeta
+REVERSED_FIREBASE_CLIENT_ID = "com.googleusercontent.apps.520843605324-6ffquml46o42nlurm4dq6hn45l8qoj0h"

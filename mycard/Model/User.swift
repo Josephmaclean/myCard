@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import RxSwift
 
 struct User: Codable {
     var name: String?

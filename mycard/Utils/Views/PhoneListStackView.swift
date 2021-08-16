@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import RxSwift
 
 class PhoneListStackView: UIStackView {
     let numberTypes: [PhoneNumberType] = [.Mobile, .Home, .Work, .Other]

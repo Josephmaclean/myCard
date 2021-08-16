@@ -28,7 +28,7 @@ target 'mycard' do
   pod 'CropViewController'
 
   #pods for rxswift
-  #pod 'RxSwift'
+  pod 'RxSwift'
   pod 'RxCocoa'
   
   #pods for keychain
